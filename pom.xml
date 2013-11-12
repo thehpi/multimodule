@@ -6,8 +6,8 @@
     <packaging>pom</packaging>
     <name>parent</name>
     <scm>
-        <connection>scm:git:git://github.com/thehpi/multimodule.git</connection>
-        <developerConnection>scm:git:git://github.com/thehpi/multimodule.git</developerConnection>
+        <connection>scm:git:git@github.com/thehpi/multimodule.git</connection>
+        <developerConnection>scm:git:git@github.com/thehpi/multimodule.git</developerConnection>
       <tag>parent-1.12</tag>
   </scm>
     <properties>
@@ -30,7 +30,7 @@
                 <version>2.3.2</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <tagBase>scm:git:git://github.com/thehpi/multimodule.git</tagBase>
+                    <tagBase>scm:git:git@github.com/thehpi/multimodule.git</tagBase>
                     <releaseProfiles>multimodule-tag-modules</releaseProfiles>
                 </configuration>
             </plugin>
@@ -58,7 +58,7 @@
                                     <phase>deploy</phase>
                                     <configuration>
                                         <goalsDirectory>..</goalsDirectory>
-			                <tagBase>scm:git:git://github.com/thehpi/multimodule.git</tagBase>
+			                <tagBase>scm:git:git@github.com/thehpi/multimodule.git</tagBase>
                                         <tag>${project.artifactId}-${project.version}</tag>
                                     </configuration>
                                     <goals>
