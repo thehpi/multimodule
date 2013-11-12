@@ -12,6 +12,13 @@
   </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <repo.server.url>http://repo.mrdm.nl:8081/artifactory</repo.server.url>
+                <environment.type>develop</environment.type>
+                <javadocs.url>repo.mrdm.nl/home/javadocs/javadocs</javadocs.url>
+                <git.server>git.mrdm.nl</git.server>
+                <git.user>git</git.user>
+                <git.url>http://git.mrdm.nl/git</git.url>
+                <git>git@git.mrdm.nl/home/git</git>
     </properties>
     <build>
         <pluginManagement>
@@ -37,6 +44,26 @@
             </plugin>
         </plugins>
     </build>
+        <distributionManagement>
+                <repository>
+                        <uniqueVersion>false</uniqueVersion>
+                        <id>mrdm-repo</id>
+                        <name>MRDM Repository</name>
+                        <url>${repo.server.url}/libs-release-local</url>
+                </repository>
+                <snapshotRepository>
+                        <uniqueVersion>false</uniqueVersion>
+                        <id>mrdm-repo</id>
+                        <name>MRDM Repository</name>
+                        <url>${repo.server.url}/libs-snapshot-local</url>
+                </snapshotRepository>
+                <site>
+                        <id>javadocs</id>
+                        <name>MRDM Java Documentation</name>
+                        <url>scp://${javadocs.url}/${project.groupId}/${project.artifactId}/${project.version}</url>
+                </site>
+        </distributionManagement>
+
     <modules>
         <module>core</module>
         <module>app1</module>
