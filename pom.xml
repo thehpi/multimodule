@@ -32,6 +32,7 @@
                 <configuration>
                     <tagBase>scm:git:https://github.com/thehpi/multimodule.git</tagBase>
                     <releaseProfiles>multimodule-tag-modules</releaseProfiles>
+		    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
@@ -47,14 +48,6 @@
             <build>
                 <pluginManagement>
                     <plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.4.2</version>
-				<configuration>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-				</configuration>
-			</plugin>
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-scm-plugin</artifactId>
