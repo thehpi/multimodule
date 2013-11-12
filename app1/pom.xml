@@ -3,13 +3,13 @@
     <parent>
         <artifactId>parent</artifactId>
         <groupId>de.friedenhagen.multimodule</groupId>
-        <version>1.12</version>
+        <version>1.13-SNAPSHOT</version>
     </parent>
     <artifactId>app1</artifactId>
     <scm>
         <connection>${parent.scm.connection}</connection>
         <developerConnection>${parent.scm.developerConnection}</developerConnection>
-      <tag>parent-1.12</tag>
+      <tag>HEAD</tag>
   </scm>
     <build>
         <plugins>
