@@ -2,14 +2,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.friedenhagen.multimodule</groupId>
     <artifactId>parent</artifactId>
-    <version>1.12</version>
+    <version>1.12-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>parent</name>
     <scm>
-        <connection>scm:git:git@github.com/thehpi/multimodule.git</connection>
-        <developerConnection>scm:git:git@github.com/thehpi/multimodule.git</developerConnection>
-      <tag>parent-1.12</tag>
-  </scm>
+        <connection>scm:git:git://github.com/thehpi/multimodule.git</connection>
+        <developerConnection>scm:git:git://github.com/thehpi/multimodule.git</developerConnection>
+    </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -30,7 +29,7 @@
                 <version>2.3.2</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <tagBase>scm:git:git@github.com/thehpi/multimodule.git</tagBase>
+                    <tagBase>scm:git:git://github.com/thehpi/multimodule.git</tagBase>
                     <releaseProfiles>multimodule-tag-modules</releaseProfiles>
                 </configuration>
             </plugin>
@@ -58,7 +57,7 @@
                                     <phase>deploy</phase>
                                     <configuration>
                                         <goalsDirectory>..</goalsDirectory>
-			                <tagBase>scm:git:git@github.com/thehpi/multimodule.git</tagBase>
+			                <tagBase>scm:git:git://github.com/thehpi/multimodule.git</tagBase>
                                         <tag>${project.artifactId}-${project.version}</tag>
                                     </configuration>
                                     <goals>
