@@ -2,14 +2,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.friedenhagen.multimodule</groupId>
     <artifactId>parent</artifactId>
-    <version>1.13-SNAPSHOT</version>
+    <version>1.12-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>parent</name>
     <scm>
         <connection>scm:git:https://github.com/thehpi/multimodule.git</connection>
         <developerConnection>scm:git:https://github.com/thehpi/multimodule.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+    </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
